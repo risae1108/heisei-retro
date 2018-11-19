@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*resetここから*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*resetここまで*/
+body {
+  background-color: #fcfff5;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility; }
+
+a:link, a:visited {
+  color: #581600;
+  outline: none;
+  text-decoration: none; }
+
+a:hover {
+  color: red;
+  text-decoration: none; }
+
+.container {
+  text-align: center;
+  padding: 30px; }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px; } }
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 15px; } }
+header {
+  border-bottom: 1px solid #111;
+  text-align: center; }
+  header .luxbar-menu {
+    background-color: #fcfff5; }
+  header .luxbar-header a {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none; }
+    header .luxbar-header a .h1-red {
+      color: red; }
+  header .luxbar-item {
+    font-size: 24px; }
+    header .luxbar-item a {
+      text-align: center;
+      text-decoration: none; }
+
+#indexWrapper {
+  padding: 20px;
+  line-height: 1.5;
+  display: block;
+  padding: 0;
+  padding: 50px 0; }
+  #indexWrapper .wrapperTitleText {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px; }
+  @media only screen and (max-width: 768px) {
+    #indexWrapper .wrapperTitleText {
+      font-size: 28px; } }
+  @media only screen and (max-width: 480px) {
+    #indexWrapper .wrapperTitleText {
+      font-size: 24px; } }
+  #indexWrapper .h1-red {
+    color: red; }
+  #indexWrapper p {
+    font-size: 24px; }
+  #indexWrapper #indexFlyerWrapper {
+    border-bottom: 1px solid #111; }
+    #indexWrapper #indexFlyerWrapper #flyerImg {
+      margin: 30px 0;
+      width: 100%; }
+  #indexWrapper #indexTextWrapper {
+    padding: 50px 0; }
+    @media only screen and (max-width: 768px) {
+      #indexWrapper #indexTextWrapper {
+        padding: 20px 0; } }
+    #indexWrapper #indexTextWrapper #newsWrapper {
+      text-align: left; }
+      #indexWrapper #indexTextWrapper #newsWrapper #newsTitle {
+        font-size: 30px;
+        font-weight: bold; }
+      #indexWrapper #indexTextWrapper #newsWrapper .newsList {
+        font-size: 24px; }
+        #indexWrapper #indexTextWrapper #newsWrapper .newsList a:link, #indexWrapper #indexTextWrapper #newsWrapper .newsList a:visited {
+          color: #581600;
+          outline: none;
+          text-decoration: underline; }
+        #indexWrapper #indexTextWrapper #newsWrapper .newsList a:hover {
+          color: red; }
+      @media only screen and (max-width: 768px) {
+        #indexWrapper #indexTextWrapper #newsWrapper #newsTitle {
+          font-size: 24px; }
+        #indexWrapper #indexTextWrapper #newsWrapper .newsList {
+          font-size: 18px; } }
+
+#aboutWrapper {
+  padding: 20px;
+  line-height: 1.5;
+  display: block;
+  padding: 200px 0; }
+  #aboutWrapper .wrapperTitleText {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px; }
+  @media only screen and (max-width: 768px) {
+    #aboutWrapper .wrapperTitleText {
+      font-size: 28px; } }
+  @media only screen and (max-width: 480px) {
+    #aboutWrapper .wrapperTitleText {
+      font-size: 24px; } }
+  #aboutWrapper .h1-red {
+    color: red; }
+  #aboutWrapper p {
+    font-size: 24px; }
+  #aboutWrapper p {
+    font-size: 24px; }
+  @media only screen and (max-width: 768px) {
+    #aboutWrapper p {
+      font-size: 18px; } }
+
+#nextWrapper {
+  padding: 20px;
+  line-height: 1.5;
+  display: block;
+  padding: 75px 0; }
+  #nextWrapper .wrapperTitleText {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px; }
+  @media only screen and (max-width: 768px) {
+    #nextWrapper .wrapperTitleText {
+      font-size: 28px; } }
+  @media only screen and (max-width: 480px) {
+    #nextWrapper .wrapperTitleText {
+      font-size: 24px; } }
+  #nextWrapper .h1-red {
+    color: red; }
+  #nextWrapper p {
+    font-size: 24px; }
+  #nextWrapper .wrapperTitle {
+    text-align: center;
+    margin: 20px 0; }
+  #nextWrapper .wrapperInfo {
+    margin: 25px auto;
+    text-align: left; }
+    #nextWrapper .wrapperInfo .infoTitle {
+      font-weight: bold; }
+  #nextWrapper #flyer {
+    text-align: center; }
+    #nextWrapper #flyer #flyerImg {
+      width: 95%; }
+  #nextWrapper #fee #waribiki {
+    margin-top: 10px; }
+  #nextWrapper p {
+    font-size: 24px; }
+  @media only screen and (max-width: 768px) {
+    #nextWrapper p {
+      font-size: 18px; } }
+
+#worksWrapper {
+  padding: 20px;
+  line-height: 1.5;
+  display: block;
+  padding: 75px 0; }
+  #worksWrapper .wrapperTitleText {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px; }
+  @media only screen and (max-width: 768px) {
+    #worksWrapper .wrapperTitleText {
+      font-size: 28px; } }
+  @media only screen and (max-width: 480px) {
+    #worksWrapper .wrapperTitleText {
+      font-size: 24px; } }
+  #worksWrapper .h1-red {
+    color: red; }
+  #worksWrapper p {
+    font-size: 24px; }
+  #worksWrapper #flyer {
+    margin: 50px auto; }
+    #worksWrapper #flyer .flyerImg {
+      width: 95%;
+      margin: 10px 0; }
+
+#contactWrapper {
+  padding: 20px;
+  line-height: 1.5;
+  display: block;
+  padding: 200px 0; }
+  #contactWrapper .wrapperTitleText {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px; }
+  @media only screen and (max-width: 768px) {
+    #contactWrapper .wrapperTitleText {
+      font-size: 28px; } }
+  @media only screen and (max-width: 480px) {
+    #contactWrapper .wrapperTitleText {
+      font-size: 24px; } }
+  #contactWrapper .h1-red {
+    color: red; }
+  #contactWrapper p {
+    font-size: 24px; }
+  #contactWrapper p {
+    font-size: 24px; }
+  @media only screen and (max-width: 768px) {
+    #contactWrapper p {
+      font-size: 18px; } }
+
+footer .copyright {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #999; }
+
+/*# sourceMappingURL=style.css.map */

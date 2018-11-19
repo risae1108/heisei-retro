@@ -1,0 +1,270 @@
+/*resetここから*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent; 
+}
+
+ol, ul {
+  list-style: none; 
+}
+
+blockquote, q {
+  quotes: none; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
+body {
+  line-height: 1; 
+}
+
+ol, ul {
+  list-style: none; 
+}
+
+blockquote, q {
+  quotes: none; 
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+/*resetここまで*/
+
+body {
+  background-color: #fcfff5; 
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+a:link, a:visited {
+  color: #581600;
+  outline: none;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: red; 
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+header{
+  border-bottom: 1px solid #111;
+  text-align: center;
+
+  .luxbar-menu{
+    background-color: #fcfff5;
+  }
+
+  .luxbar-header{
+    a{
+      font-size: 36px; 
+      font-weight: bold;
+      text-decoration: none;
+      .h1-red{
+        color: red;
+      }
+    }
+  }
+
+  .luxbar-item{
+    font-size: 24px;
+    a{
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin wrapper {
+  padding: 20px;
+  line-height: 1.5;
+  display: block;
+  .wrapperTitleText{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    .wrapperTitleText{
+      font-size: 28px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .wrapperTitleText{
+      font-size: 24px;
+    }
+  }
+  .h1-red{
+    color: red;
+  }
+  p{
+    font-size: 24px;
+  }
+}
+
+#indexWrapper{
+@include wrapper();
+padding: 0;
+padding: 50px 0;
+  #indexFlyerWrapper{
+    border-bottom: 1px solid #111;
+    #flyerImg{
+      margin: 30px 0;
+      width: 100%;
+    }
+  }
+  #indexTextWrapper{
+    padding: 50px 0;
+    @media only screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+    #newsWrapper{
+      text-align: left;
+      #newsTitle{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .newsList{
+        font-size: 24px;
+        a:link, a:visited {
+          color: #581600;
+          outline: none;
+          text-decoration: underline; 
+        }
+        a:hover {
+          color: red; 
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        #newsTitle{
+          font-size: 24px;
+        }
+        .newsList{
+          font-size: 18px;
+        }
+      }
+    }
+}
+}
+
+#aboutWrapper{
+  @include wrapper();
+  padding: 200px 0;
+  p{
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 768px) {
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+#nextWrapper{
+  @include wrapper();
+  padding: 75px 0;
+  .wrapperTitle{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .wrapperInfo{
+    margin: 25px auto;
+    text-align: left;
+    .infoTitle{
+      font-weight: bold;
+    }
+  }
+
+  #flyer{
+    text-align: center;
+    #flyerImg{
+      width: 95%;
+    }
+  }
+
+  #fee{
+    #waribiki{
+      margin-top: 10px;
+    }
+  }
+  p{
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 768px) {
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+#worksWrapper{
+  @include wrapper();
+  padding: 75px 0;
+  #flyer{
+    margin: 50px auto;
+    .flyerImg{
+      width: 95%;
+      margin: 10px 0;
+    }
+  }
+}
+
+#contactWrapper{
+  @include wrapper();
+  padding: 200px 0;
+  p{
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 768px) {
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+footer{
+  .copyright{
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #999;
+  }
+}
